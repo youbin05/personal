@@ -1,15 +1,15 @@
 (README 파일을 작성할 때, 명확하고 정보를 잘 전달할 수 있도록 노력하세요. 이 파일은 취업 또는 협업 기회를 위한 중요한 자료가 될 수 있습니다.)
-### https://pageservice.github.io/personal/
-# 프로젝트 명 : 이선's 포트폴리오 홈페이지bash
+### https://youbin05.github.io/my-pf1
+# 프로젝트 명 : MY-PF1
 <h1>제목</h1>## 프로젝트 목표
 취업을 위한 포트폴리오 제작, 자신의 작업을 전시하고 홍보
 
 ## 기술 스텍
-(프로젝트를 개발할 때 사용한 기술 스택과 도구를 나열)
-HTML5
-css3
-jquery
-javascript
+(프로젝트를 개발할 때 사용한 기술 , 스택과 도구)
+- HTML5
+- css3
+- jquery
+- javascript
 
 ## 기능 및 섹션
 (웹사이트의 주요 기능과 섹션을 설명)
@@ -52,7 +52,7 @@ ACCUNIQ https://pageservice.github.io/pf1/
 
 
 ## 작성자 정보
-(이메일 주소나 연락처 정보를 추가)
+youbin4869@gmail.com
 
 ## 향후 계획 (선택 사항)
 (추가적인 기능 개발, 디자인 개선, 사용자 피드백 수렴 등)
