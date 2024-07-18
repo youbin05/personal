@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio 1</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 구글 폰트  -->
+    <link rel="preconnect" href="https//fonts.googleapis.com">
+    <link rel="preconnect" href="https//fonts.gstatic.com" crossorigin>
+    <link href="https//fonts.googleapis.com/css2?family=Noto+Sans+KRwght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- slick link -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick -->
+    <script>
+        $(document).ready(function(){
+            $('.titleani').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            pauseOnHover:true,
+            dots: false,
+            infinite: false,
+            speed: 1500,
+            cssEase: 'ease-out',
+            arrows:true
+            }); 
+        });
+        // 사이드 메뉴 펼치고 접기
+        $(document).ready(function(){
+            $("aside button").click(function(){
+                $("aside").toggleClass("show");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap">
+            <nav class="flex">
+                <h1><a href="" class="block">YB's portfolio</a></h1>
+                <ul class="gnb flex">
+                    <li><a href="" class="block h5 gnb border">About Me</a></li>
+                    <li><a href="" class="block h5 gnb border">Skill&Tools</a></li>
+                    <li><a href="" class="block h5 gnb border">Portfolio</a></li>
+                    <li><a href="" class="block h5 gnb border">Work Process</a></li>
+                    <li><a href="" class="block h5 gnb border">Content</a></li>
+                </ul>
+                <ul class="enb flex">
+                    <li><a href="" class="block h6">Notion</a></li>
+                    <li><a href="" class="block h6">카톡</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <aside>
+        <h2>Menu</h2>
+        <button>Menu</button>
+        <ul>
+            <li><a href="" class="block">About Me</a></li>
+            <li><a href="" class="block">Skill&Tools</a></li>
+            <li><a href="" class="block">Portfolio</a></li>
+            <li><a href="" class="block">Work Process</a></li>
+            <li><a href="" class="block">Content</a></li>
+        </ul>
+    </aside>
+    <!-- 타이틀영역 -->
+    <div id="title">
+        <div class="img flex">
+            <figure>
+                <img src="img/b.jpg" alt="임시 이미지">
+                <figcaption>임시</figcaption>
+            </figure>
+        </div>
+        <div class="wrap flex">
+            <h2 class="h1">창의적 디자인으로 디지털 세상을 변화시키는 <br>신입 웹디자이너 & 웹퍼블리셔</h2>
+            <p class="h4">끊임없는 배움과 열정으로 완성하는 웹 경험</p>
+            <article class="block">ball 1</article>
+            <article class="block">ball 2</article>
+            <article class="block">ball 3</article>
+        </div>
+    </div>
+    <!-- 메인영역 -->
+    <main>
+        <!-- About me -->
+        <section id="aboutme">
+            <div class="wrap paddingT50 paddingB100 grid">
+                <h2 class="font90 borderB h2 color">About Me</h2>
+                <figure>
+                    <img src="https://placehold.co/400x600" alt="유빈정면사진">
+                    <figcaption>유빈</figcaption>
+                </figure>
+                <ul class="intro">
+                    <li>
+                        <h3 class="h6 hide">소개</h3>
+                        <p class="h4">안녕하세요, 웹디자이너+웹퍼블리셔 지망생 김유빈 입니다.</p>
+                    </li>
+                    <li>
+                        <h3 class="h6">경력</h3>
+                        <p class="p15">최근 모란이젠 IT 아카데미에서 웹디자인(또는 웹퍼블리싱) 과정을 수료했습니다<span class="block"></span>
+                            학습 과정에서 다양한 프로젝트를 통해 실무 경험을 쌓았습니다.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="h6">목표</h3>
+                        <p class="p15">사용자 경험을 개선하고, 창의적인 웹 디자인을 제공하는 웹디자이너(또는 웹퍼블리셔)가 되는 것을 목표로 하고 있습니다.</p>
+                    </li>
+                    <li>
+                        <h3 class="h6">계기와 열정</h3>
+                        <p class="p15">웹 디자인과 웹 퍼블리싱을 주변 지인의 추천으로 관심을 가지게 되었습니다. 학원에서 배운 기술과 지식을 바탕으로, 더 나은 웹 환경을 만드는 데 기여하고자 합니다.</p>
+                    </li>
+                </ul>
+                <ul class="info">
+                    <li><strong>이메일</strong>youbin4869@gamil.com</li>
+                    <li><strong>전화번호</strong>010-1234-5678</li>
+                    <li><strong>GitHub 프로필 : @youbin05</strong></li>
+                </ul>
+            </div>
+        </section>
+        <!-- skill -->
+        <section id="skill">
+            <div class="wrap paddingT50 paddingB100 flex">
+                <h2 class="font90 borderB h2 color">Skill&Tools</h2>
+                <ul class="list">
+                    <li class="flex">
+                        <h3 class="h3">프론트엔드</h3>
+                        <ul class="sub flex">
+                            <li class="p15"><strong class="bold">HTML5</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">CSS3</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">JavaScript</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">jQuery</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">반응형 웹 디자인</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">웹표준</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">웹접근성</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">웹폰트</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">웹아이콘</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">SVG</strong><i class="block">중급</i></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="h3">프레임워크 및<span class="block"></span>라이브러리</h3>
+                        <ul class="sub flex">
+                            <li class="p15"><strong class="bold">Vue.js</strong>초급<i class="block"></i></li>
+                            <li class="p15"><strong class="bold">Bootstrap</strong><i class="block">중급</i></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="h3">디자인 Tools</h3>
+                        <ul class="sub flex">
+                            <li class="p15"><strong class="bold">Photoshop</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Illustrator</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Figma</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Kakao Oven</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Balsamiq</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Almind</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Premiere Pro</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">After Effects</strong><i class="block">중급</i></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="h3">버전 관리 및<span class="block"></span> 협업 도구</h3>
+                        <ul class="sub flex">
+                            <li class="p15"><strong class="bold">Git</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">GitHub</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Google Drive</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Firefox <span class="block"></span>개발자 도구</strong><i class="block">중급</i></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="h3">기타 도구 및<span class="block"></span> 기술</h3>
+                        <ul class="sub flex">
+                            <li class="p15"><strong class="bold">VS Code</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Atom <span class="block"></span> Editor</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Emmet <span class="block"></span> (Zen Coding)</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">Sass</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">웹사이트 <span class="block"></span> 최적화</strong><i class="block">중급</i></li>
+                            <li class="p15"><strong class="bold">검색엔진 <span class="block"></span> 최적화 (SEO)</strong><i class="block">중급</i></li>
+                        </ul>
+                    </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </section>
+       <!-- Portfolio -->
+       <section id="portfolio">
+        <div class="wrap paddingT50 paddingB100 flex">
+            <h2 class="font90 borderB h2 color">Portfolio</h2>
+            <p>"아래 작품들은 제가 학원에서 수료하는 동안 진행한 다양한 웹디자인 및 웹퍼블리싱 프로젝트들입니다. <span class="block"></span>
+                각 프로젝트는 최신 기술과 디자인 트렌드를 반영하여 제작되었으며, 실무에서의 적용 가능성을 염두에 두고 개발되었습니다."
+            </p>
+            <ul class="list">
+                <li>
+                    <div>
+                        <h3 class="h3">한국교직원공제회</h3>
+                        <figure>
+                            <img src="img/pf1.png" alt="한국교직원공제회">
+                            <figcaption>Learn More</figcaption>
+                        </figure>
+                        <ul class="sub">
+                            <li><strong class="bold">개요</strong> 온라인 쇼핑몰 사이트 디자인 및 퍼블리싱</li>
+                            <li><strong class="bold">역할</strong> 전체 디자인 및 프론트엔드 퍼블리싱</li>
+                            <li><strong class="bold">사용한 기술</strong> HTML5, CSS3, JavaScript, jQuery, Bootstrap</li>
+                            <li class="work">
+                                <strong class="bold">작업 과정</strong>
+                                <ul>
+                                    <li>아이디어 구상 및 컨셉 설정</li>
+                                    <li>와이어프레임 및 디자인 시안 제작</li>
+                                    <li>HTML/CSS로 레이아웃 구현</li>
+                                    <li>JavaScript/jQuery로 동적 요소 추가</li>
+                                    <li>반응형 디자인 구현</li>
+                                </ul>
+                            </li>
+                            <li><strong class="bold">기여도</strong> 80% (디자인, 퍼블리싱 및 테스트)</li>
+                            <li><a href="#" class="block white rounded">Github source</a><a href="blog_platform_live_link" class="block blue rounded">View </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="h3">알툴즈</h3>
+                        <figure>
+                            <img src="img/pf2.png" alt="알툴즈">
+                            <figcaption>Learn More</figcaption>
+                        </figure>
+                        <ul class="sub">
+                            <li><strong class="bold">개요</strong> 개인 포트폴리오 사이트 디자인 및 퍼블리싱</li>
+                            <li><strong class="bold">역할</strong> 전체 디자인 및 프론트엔드 퍼블리싱</li>
+                            <li><strong class="bold">사용한 기술</strong> HTML5, CSS3, JavaScript, React</li>
+                            <li class="work">
+                                <strong class="bold">작업 과정</strong>
+                                <ul>
+                                    <li>컨셉 설정 및 아이디어 스케치</li>
+                                    <li>와이어프레임 및 프로토타입 제작</li>
+                                    <li>React를 사용한 컴포넌트 기반 개발</li>
+                                    <li>CSS3로 스타일링 및 애니메이션 추가</li>
+                                    <li>반응형 디자인 적용</li>
+                                </ul>
+                            </li>
+                            <li><strong class="bold">기여도</strong> 100% (단독 프로젝트)</li>
+                            <li><a href="#" class="block white rounded">Github source</a><a href="blog_platform_live_link" class="block blue rounded">View </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3 class="h3">한국교직원공제회</h3>
+                        <figure>
+                            <img src="img/pf1.png" alt="한국교직원공제회">
+                            <figcaption>Learn More</figcaption>
+                        </figure>
+                        <ul class="sub">
+                            <li><strong class="bold">개요</strong> 온라인 쇼핑몰 사이트 디자인 및 퍼블리싱</li>
+                            <li><strong class="bold">역할</strong> 전체 디자인 및 프론트엔드 퍼블리싱</li>
+                            <li><strong class="bold">사용한 기술</strong> HTML5, CSS3, JavaScript, jQuery, Bootstrap</li>
+                            <li class="work">
+                                <strong class="bold">작업 과정</strong>
+                                <ul>
+                                    <li>아이디어 구상 및 컨셉 설정</li>
+                                    <li>와이어프레임 및 디자인 시안 제작</li>
+                                    <li>HTML/CSS로 레이아웃 구현</li>
+                                    <li>JavaScript/jQuery로 동적 요소 추가</li>
+                                    <li>반응형 디자인 구현</li>
+                                </ul>
+                            </li>
+                            <li><strong class="bold">기여도</strong> 80% (디자인, 퍼블리싱 및 테스트)</li>
+                            <li><a href="#" class="block white rounded">Github source</a><a href="blog_platform_live_link" class="block blue rounded">View </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="process">
+        <div class="wrap paddingT50 paddingB50 grid">
+            <h2 class="h2 font90 center borderB color">Learning Archive</h2>
+            <p>학습 과정에서 생성된 문서, 자료, 산출물을 체계적으로 모아놓았습니다</p>
+            <h3>UI/UX 웹디자인,웹퍼블리셔 5개월 과정[2024.04.02 - 08.22]</h3>
+            <ul class="titleani">
+                <li>포토샵(기초)</li>
+                <li>일러스트(기초)</li>
+                <li>프로토타입 기초데이터수집 및 스케치</li>
+                <li>프로토타입 제작 및 사용성 테스트</li>
+                <li>HTML & CSS</li>
+                <li>서비스·경험디자인 관찰조사</li>
+                <li>서비스·경험디자인 시나리오 개발</li>
+                <li>디자인 구성요소 설계</li>
+                <li>디자인 구성요소 제작</li>
+                <li>디자인 구성요소 응용</li>
+                <li>자바스크립트 & 제이쿼리</li>
+                <li>스마트문화앱 UX 설계</li>
+                <li>스마트문화앱 UI 디자인</li>
+                <li>프로젝트 완료 자료정리</li>
+                <li>프로젝트 완료 결과보고서 작성</li>
+                <li>프로젝트 완료 최종보고</li>
+                <li>Vue.js</li>
+                <li>웹영상콘텐츠 후반작업-비NCS실기</li>
+                <li>디지털디자인 사후관리</li>
+            </ul>
+            <a href="block">Learning Archive 보기</a>
+        </div>
+    </section>  
+    <section id="contact">
+        <div class="wrap paddingT50 paddingB50 grid">
+            <h2 class="h2 font90 center borderB color">Contact</h2>
+            <p class="p15">웹디자인과 웹퍼블리싱 분야에서의 성장을 위해 노력하고 있습니다. <span class="block"></span>궁금한 사항이나 제안이 있으시면 연락 주시기 바랍니다.</p>
+            <ul class="list">
+                <li><strong>Name:</strong> 김유빈</li>
+                <li><strong>Email:</strong>youbin4869@gamil.com</li>
+                <li><strong>Phone:</strong> 010-1234-5678</li>
+                <li><strong>Address:</strong> 서울특별시 강남구 테헤란로</li>
+            </ul>
+            <a href="https://forms.gle/eaX4zPqz85H3YJebA" class="QnA b-gra" target="_blank">Ask a Question</a>
+            <ul class="sns flex">
+                <li><a href="" class="block">카카오톡</a></li>
+                <li><a href="" class="block">인스타그램</a></li>
+                <li><a href="" class="block">G mail</a></li>
+            </ul>
+            <div class="sourcesite">
+                <h3 class="h4">my source sites</h3>
+                <p>작업시 이용하는 소스사이트입니다</p>
+                <ul class="src flex">
+                    <li><a href="" class="block">GDWEB</a></li>
+                    <li><a href="" class="block">UNSPALSH</a></li>
+                    <li><a href="" class="block">pinterest</a></li>
+                    <li><a href="" class="block">pixabay</a></li>
+                    <li><a href="" class="block">google font</a></li>
+                    <li><a href="" class="block">canva</a></li>
+                    <li><a href="" class="block">adobe color</a></li>
+                    <li><a href="" class="block">gliffy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap paddingT50 paddingB50 grid">
+            <h1><a href="" class="block">YB's portfolio</a></h1>
+            <address><strong></strong><strong></strong><strong></strong></address>
+            <ul class="sns flex">
+                <li><a href="" class="block">Notion</a></li>
+                <li><a href="" class="block">GitHub</a></li>
+                <li><a href="" class="block">Google</a></li>
+                <li><a href="" class="block">Codepen</a></li>
+                <li><a href="" class="block">instargram</a></li>
+            </ul>
+            <ul class="fnb flex">
+                <li><a href="" class="block h5">About me</a></li>
+                <li><a href="" class="block h5">Skill&Tools</a></li>
+                <li><a href="" class="block h5">Portfolio</a></li>
+                <li><a href="" class="block h5">Work process</a></li>
+                <li><a href="" class="block h5">Contact</a></li>
+            </ul>
+            <p class="p15">Website designed and developed by kim youbin<strong>© 2024 youbin. All rights reserved.</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
