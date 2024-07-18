@@ -25,7 +25,8 @@
 ACCUNIQ https://pageservice.github.io/pf1/
 
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1](https://github.com/user-attachments/assets/80df2aa6-04ee-4607-91c9-70f7a262268e)
+
+![pf1](https://github.com/user-attachments/assets/f1c5fd64-d4c3-401b-b4eb-7b6591cfcbd6)
 ![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
 ![pf1-어큐닉](https://github.com/pageservice/personal/assets/71798491/3e7a5d1c-3326-4ffc-ac79-3fe4a96fe6a3)
 ![pf4](https://github.com/pageservice/personal/assets/71798491/e8b59bed-76df-470c-8aec-71f580ab6cca)
