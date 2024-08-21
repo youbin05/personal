@@ -1,0 +1,1391 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+main {
+  
+}
+section{
+ 
+}
+/* 상단영역 */
+header {
+  width: 100%;
+  height: auto;
+}
+header div.wrap {
+  display: flex;
+  max-width: initial;
+  height: auto;
+  justify-content: center;
+}
+header div.wrap nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
+  align-items: center;
+  column-gap: 45px;
+  width: calc(100% - 170px);
+  padding: 10px 0;
+}
+header div.wrap div.scroll{
+  width: 50px;
+  height: 80px;
+  border:1px solid #fff;
+  border-radius: 25px;
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+header div.wrap div.scroll h2{
+  width: 100px;
+  flex-wrap: wrap;
+  color: white;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 43px);
+  text-transform: capitalize;
+}
+header div.wrap div.scroll::before{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 5px;
+  animation-name: scrolldown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  position: absolute;
+  right: calc(50% - 2.5px);
+  top: 10px;
+  opacity: 0;
+}
+@keyframes scrolldown{
+  0%{
+    right: calc(50% - 2.5px);
+    top: 10px;
+    opacity: 1;
+  }
+  100%{
+    top: 50px;
+  }
+}
+header div.wrap h1 {
+  font-size: 0;
+  margin: 0.67em 0;
+  width: 250px;
+  height: 70px;
+  background-color: #ffffffc4;
+  border-radius: 50px;
+}
+header div.wrap nav h1 a{
+  height: 100%;
+  opacity: 1;
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 15px;
+  box-sizing: border-box;
+}
+header div.wrap ul.gnb {
+  width: fit-content;
+  height: auto;
+  justify-self: right;
+  text-transform: uppercase;
+  grid-column: 2;
+}
+header div.wrap ul.gnb li {
+  position: relative;
+}
+header div.wrap ul.gnb li::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  border-right: 2px solid #fff;
+  opacity: 0.7;
+  position: absolute;
+  top: 35%;
+  right:0;
+}
+header div.wrap ul.gnb li:last-child::after{
+  display: none;
+}
+header div.wrap ul.gnb li a {
+  width: auto;
+  height: 100%;
+  line-height: 2;
+  display: block;
+  position: relative;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.2s;
+  letter-spacing: 0.5px;
+}
+header div.wrap ul.gnb li a:hover{
+  color: #f9bd61;
+}
+header div.wrap ul.gnb li a:hover::before{
+  width: 100%;
+}
+header div.wrap ul.enb {
+  width: 100px;
+  height: auto;
+  background-color: #ffffffc4;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  grid-column: 3;
+}
+header div.wrap ul.enb li {
+  
+}
+header div.wrap ul.enb li a {
+  font-size: 0;
+  width: 35px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header div.wrap ul.enb li:nth-child(1) a{
+  background-image: url(../img/notion3.svg);
+  position: relative;
+}
+header div.wrap ul.enb li:nth-child(1) a:hover{
+  
+}
+header div.wrap ul.enb li:nth-child(2) a{
+  background-image: url(../img/kakao-talk.svg);
+}
+header div.wrap ul.enb li:nth-child(2) a:hover{
+  
+}
+header div.flex{
+  position: relative;
+  height: 100%;
+}
+/* aside */
+aside{
+  
+}
+aside.Menu{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 20px;
+  width: 200px;
+  height: 220px;
+  background-color: #ffffffe3;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  right: -175px;
+  top: 150px;
+  z-index: 1;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px #99999954;
+}
+aside.Menu h2{
+  grid-column: 2;
+  grid-row: 1;
+  width: 80%;
+  justify-self: center;
+  text-align: center;
+  font-size: calc(65px *0.4);
+  border-bottom: 1px solid;
+  line-height: 1.5;
+}
+aside.Menu button{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 80px;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #292929;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  cursor: pointer;
+}
+aside.Menu ul{
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  line-height: 1.5;
+}
+aside.Menu ul li{
+  
+}
+aside ul.Menu li a{
+  margin-bottom: 5px;
+}
+/* aside top */
+aside.top{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 30px;
+  transition: 0.5s;
+  background-color: wheat;
+  border-radius: 50%;
+}
+aside.top:hover{
+  transform: translateY(-15px);
+}
+aside.top h2{
+  color: #333;
+  font-size: 25px;
+}
+aside.top img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: -1;
+}
+/* body 공통설정 */
+body{
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+body::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(../img/back.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* 타이틀 영역 */
+#title {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: white;
+  letter-spacing: -1px;
+}
+#title div.wrap {
+  width: 100%;
+  height: 341px;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  gap: 40px;
+  text-align: right;
+  line-height: 1.5;
+}
+#title div.wrap h2{
+  animation-name: op;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#title div.wrap div.line{
+  width: 80%;
+  height: 2px;
+  background-color: #333;
+  margin: 0 auto;
+}
+#title div.wrap img{
+  width: 250px;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  display: none;
+}
+#title div.wrap img:nth-of-type(1){
+  left: -130px;
+  top: 0;
+}
+#title div.wrap img:nth-of-type(2){
+  right: -130px;
+  top: -200px;
+  object-position: right;
+}
+@keyframes op{
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+div#title div.wrap h2:hover::after{
+  /*! transform: translateY(-50px); */
+}
+div#title div.wrap h2 strong{
+  display: block;
+  line-height: 1.6;
+  font-size: 52px;
+  font-weight: 600;
+  color: #fabe61;
+}
+div#title div.wrap p {
+  margin-left: 15px;
+  position: relative;
+  animation-name: op;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+/* about me */
+#aboutme {
+  width: 1400px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-color: #e3f5ff;
+  border-radius: 50px;
+  margin: 100px auto;
+}
+#aboutme div.wrap {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  width: 1280px;
+  height: auto;
+  position: relative;
+}
+#aboutme div.wrap h2 {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: flex-end;
+  color: #333;
+  position: relative;
+}
+#aboutme div.wrap p.h4{
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+  position: static;
+  z-index: 2;
+}
+#aboutme div.wrap figure{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 270px;
+  height: auto;
+  justify-self: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+#aboutme div.wrap figure::after{
+  content: "";
+  display: block;
+  width: 330px;
+  height: 810px;
+  background-color: #ffffff8f;
+  position: absolute;
+  top: -150px;
+  right: calc(50% - 165px);
+  z-index: -1;
+}
+#aboutme div.wrap figure img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px #e1e1e1;
+}
+#aboutme div.wrap figure figcaption{
+  display: none;
+}
+#aboutme div.wrap ul.intro {
+  width: fit-content;
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: flex-end;
+}
+#aboutme div.wrap ul.intro li{
+  line-height: 1.5;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+#aboutme div.wrap ul.intro li h3 {
+  font-size: 18px;
+  width: 130px;
+}
+#aboutme div.wrap ul.intro li h3::before{
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #6f6f6f;
+  border-radius: 10px;
+  margin-right: 5px;
+  transform: translateY(-5px);
+}
+#aboutme div.wrap ul.intro li p {
+  width: auto;
+  font-size: 18px;
+}
+#aboutme div.wrap ul.info {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: static;
+  z-index: 2;
+}
+#aboutme div.wrap ul.info li {
+  
+}
+#aboutme div.wrap ul.info li:not(:last-child) strong {
+  font-size: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+#aboutme div.wrap ul.info li:nth-child(1) strong{
+  background-image: url(../img/email.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#aboutme div.wrap ul.info li:nth-child(2) strong{
+  background-image: url(../img/phone.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#aboutme div.wrap ul.info li:last-child strong::before{
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20px;
+  background-image: url(../img/github.svg);
+  background-size: contain;
+  border: 1px solid #ccc;
+}
+#aboutme div.wrap ul.info li:last-child{
+  grid-column: 3;
+  grid-row: 1;
+}
+#aboutme div.wrap ul.info li:last-child strong{
+  
+}
+/* skill */
+#skill{
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+#skill div.wrap {
+  width: 1900px;
+  height: 580px;
+  gap: 20px;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 80px;
+  justify-content: center;
+  line-height: 1.5;
+}
+#skill div.wrap h2{
+  color: #333;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+#skill div.wrap ul.list{
+  width: 1400px;
+}
+#skill div.wrap ul.list button{
+  position: static;
+  transform: translate(0);
+  background-repeat: no-repeat;
+}
+#skill div.wrap ul.list button::before{
+  font-size: 0;
+}
+#skill div.wrap ul.list div.Sbutton{
+  position: absolute;
+  top: -100px;
+  right: 90px;
+  z-index: 1;
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  background-color: #d9eea0;
+  border-radius: 10px;
+  padding: 10px;
+}
+#skill div.wrap ul.list .slick-prev{
+  background-image: url(../img/arrow.sk.L.svg);
+  background-position: center;
+}
+#skill div.wrap ul.list .slick-next{
+  background-image: url(../img/arrow.sk.R.svg);
+  background-position: center;
+}
+#skill div.wrap ul.list>li{
+  align-self: center;
+  padding: 15px 0;
+}
+#skill div.wrap ul.list>li h3{
+  text-align: center;
+  margin: 20px 0;
+  height: fit-content;
+  font-size: 25px;
+  color: #555;
+}
+#skill div.wrap ul.list li strong{
+  text-align: center;
+  font-size: 14px;
+}
+/* (1)프론트엔드 아이콘영역 */
+#skill div.wrap ul.list li> ul.sub li strong::after{
+  content: "";
+  display: block;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 100px;
+  margin: 0 auto;
+}
+#skill div.wrap ul.sub li.a strong::after{
+  background-image: url(../img/icon1.svg);
+}
+#skill div.wrap ul.sub li.b strong::after{
+  background-image: url(../img/icon2.svg);
+}
+#skill div.wrap ul.sub li.c strong::after{
+  background-image: url(../img/icon3.svg);
+}
+#skill div.wrap ul.sub li.d strong::after{
+  background-image: url(../img/icon4.svg);
+}
+#skill div.wrap ul.sub li.e strong::after{
+  background-image: url(../img/icon5.svg);
+}
+#skill div.wrap ul.sub li.f strong::after{
+  background-image: url(../img/icon6.svg);
+}
+#skill div.wrap ul.sub li.g strong::after{
+  background-image: url(../img/icon7.svg);
+}
+#skill div.wrap ul.sub li.h strong::after{
+  background-image: url(../img/icon8.svg);
+}
+#skill div.wrap ul.sub li.i strong::after{
+  background-image: url(../img/icon9.svg);
+}
+#skill div.wrap ul.sub li.j strong::after{
+  background-image: url(../img/icon10.svg);
+}
+/* (2) 프레임워크 및 라이브러리영역 */
+#skill div.wrap ul.sub li.k strong::after{
+  background-image: url(../img/vuejs.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.l strong::after{
+  background-image: url(../img/bootstrap.svg);
+  background-size: contain;
+}
+/* (3) 디자인 tools영역 */
+#skill div.wrap ul.sub li.m strong::after{
+  background-image: url(../img/icon11.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.n strong::after{
+  background-image: url(../img/icon12.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.o strong::after{
+  background-image: url(../img/icon13.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.p strong::after{
+  background-image: url(../img/icon14.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.q strong::after{
+  background-image: url(../img/icon15.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.r strong::after{
+  background-image: url(../img/icon16.svg);
+  background-size: contain;
+}
+/* (4)버전 관리 및 협업 도구영역 */
+#skill div.wrap ul.sub li.s strong::after{
+  background-image: url(../img/icon17.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.t strong::after{
+  background-image: url(../img/icon18.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.u strong::after{
+  background-image: url(../img/icon19.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.v strong::after{
+  background-image: url(../img/icon20.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.sub li.w strong::after{
+  background-image: url(../img/icon21.svg);
+  background-size: contain;
+}
+/* (5)기타도구 및 기술 영역  */
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li:nth-child(1) i::before{
+  background-image: url(../img/icon22.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li:nth-child(2) i::before{
+  background-image: url(../img/icon26.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li:nth-child(3) i::before{
+  background-image: url(../img/icon27.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li:nth-child(4) i::before{
+  background-image: url(../img/icon30.svg);
+  background-size: contain;
+}
+
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li:nth-child(1) i::before{
+  background-image: url(../img/icon21.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li:nth-child(2) i::before{
+  background-image: url(../img/icon22.svg);
+  background-size: contain;
+}
+#skill div.wrap ul.list li:nth-child(5) > ul.sub li strong{
+  height: 20px;
+}
+#skill div.wrap ul.list li:nth-child(4) > ul.sub li strong{
+  height: 20px;
+  align-content: center;
+}
+#skill div.wrap ul.list > li:nth-child(1) strong::after,
+#skill div.wrap ul.list > li:nth-child(2) strong::after,
+#skill div.wrap ul.list > li:nth-child(3) strong::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#skill div.wrap ul.list>li ul.sub { 
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  animation-name: line;
+  animation-duration: 2s;
+  box-shadow: 10px 10px 10px #eee;
+}
+#skill div.wrap ul.list>li ul.sub::hover{
+  
+}
+#skill div.wrap ul.list > li:nth-child(1) ul.sub{
+  gap: 20px;
+}
+#skill div.wrap ul.list > li:nth-child(2) ul.sub{
+  column-gap: 10px;
+}
+#skill div.wrap ul.list > li:nth-child(3) ul.sub{
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  height: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub{
+  
+}
+#skill div.wrap ul.list > li:nth-child(5) ul.sub{
+ 
+}
+#skill div.wrap ul.list>li ul{
+  
+}
+#skill div.wrap ul.list>li ul li{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  height: 145px;
+}
+#skill div.wrap ul.list >li{
+  display: flex;
+  width: fit-content;
+}
+#skill div.wrap ul.list >li:nth-child(1){
+  grid-column: 1 / span 5;
+  grid-row: 1;
+}
+#skill div.wrap ul.list >li:nth-child(2){
+  grid-column: 5;
+  grid-row: 2;
+  justify-self: right;
+}
+#skill div.wrap ul.list >li:nth-child(3){
+  grid-column: 1 / span 4;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  display: flex;
+}
+#skill div.wrap ul.list > li:nth-child(4){
+  grid-column: 5;
+  grid-row: 3;
+}
+#skill div.wrap ul.list > li:nth-child(3) ul.sub li{
+  margin: 0 10px 0 29px;
+  justify-content: center;
+}
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li{
+  width: 100px;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li{
+  width: 100px;
+}
+#skill div.wrap ul.list > li:nth-child(1)::before{
+  width: 50px;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li i::before,
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li i::before{
+  content: "";
+  width: 70px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+#skill div.wrap ul.list > li:nth-child(4) ul.sub li strong::after,
+#skill div.wrap ul.list > li:nth-child(2) ul.sub li strong::after{
+  width: 90px;
+  height: 90px;
+}
+#skill div.wrap ul.list > li:nth-child(3) ul.sub li strong::after,
+#skill div.wrap ul.list > li:nth-child(5) ul.sub li strong::after{
+  width: 70px;
+  height: 70px;
+}
+#skill div.wrap ul.list > li:nth-child(3) h3{
+  grid-column: 1 / span 2;
+}
+#skill div.wrap ul.list >li:nth-child(4){
+  grid-column: 3 / span 3;
+  grid-row: 3;
+}
+#skill div.wrap ul.list >li:nth-child(5){
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
+/* skill slick */
+#skill div.slick-list{
+  padding: 0 !important;
+  width: 100%;
+  height: auto;
+}
+#skill div.slick-track{
+  width: 100%;
+}
+#skill .slick-initialized .slick-slide{
+  width: fit-content !important;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#skill .slick-initialized .slick-slide h3{
+  height: auto;
+  font-size: 30px;
+  color: #555;
+}
+#skill .slick-initialized .slick-slide ul.sub{
+  width: fit-content;
+  height: fit-content;
+  padding: 0 30px;
+}
+#skill .slick-initialized .slick-slide ul.sub li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px; 
+  height: 170px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: -8px -8px 16px 0 #fff, 8px 8px 16px 0 rgba(0,0,0,0.1);
+}
+#skill ul.skillani2{
+  
+}
+#skill ul.skillani2 .draggable{
+ 
+}
+#skill ul.skillani2 .slick-list{
+  width: 100%;
+}
+/* 포폴 */
+#portfolio {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+#portfolio div.wrap {
+  grid-template-columns: 746px auto;
+  grid-template-rows: repeat(3,auto);
+  gap: 40px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+#portfolio div.wrap h2 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+ color: #555;
+  justify-self: center;
+}
+#portfolio div.wrap p {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+}
+#portfolio div.wrap div{
+
+}
+#portfolio div.wrap div:nth-child(n+1){
+   grid-column: 1;
+   grid-row: 3;
+}
+#portfolio div.wrap ul.sub{
+  
+}
+#portfolio div.wrap ul.sub li{
+  
+}
+#portfolio div.wrap ul.sub li.B{
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+#portfolio div.wrap ul.sub li.B a{
+  width: 200px;
+  height: 56px;
+  align-content: center;
+  transition: 0.5s;
+}
+#portfolio div.wrap ul.sub li.B a:nth-of-type(1){
+  background-image: url(../img/GithubButton.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#portfolio div.wrap ul.sub li.B a:nth-of-type(1):hover{
+  background-image: url(../img/GithubButtonafter.svg);
+  background-size: contain;
+  background-position: bottom;
+}
+#portfolio div.wrap ul.sub li.B a:nth-of-type(2){
+  background-image: url(../img/viewbutton.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#portfolio div.wrap ul.sub li.B a:nth-of-type(2):hover{
+  background-image: url(../img/viewbuttonafter.svg);
+  background-size: contain;
+  background-position: bottom;
+}
+#portfolio div.wrap ul.sub ul{
+  
+}
+#portfolio div.wrap ul.sub ul li{
+  
+}
+#portfolio div.wrap ul.sub:nth-child(n+1){
+   grid-column: 2 / span 2;
+   grid-row: 3;
+   text-align: left;
+}
+#portfolio div.wrap div.wimg{
+  width: 100%;
+  grid-column: 1;
+  grid-row: 3;
+}
+#portfolio div.wrap div.wimg figure{
+ 
+}
+#portfolio div.wrap div.wimg img{
+  
+}
+#portfolio div.wrap div.wsub{
+  width: 600px;
+  grid-column: 2;
+  grid-row: 3;
+  line-height: 2;
+  position: relative;
+}
+/* k */
+#portfolio div.wrap div.k{
+ 
+}
+#portfolio div.wrap div.k ul.sub{
+}
+/* al */
+#portfolio div.wrap div.al{
+  
+}
+#portfolio div.wrap div.al ul.sub{
+}
+/* ma */
+#portfolio div.wrap div.ma{
+  
+}
+#portfolio div.wrap div.ma ul.sub{
+}
+/* pf slick */
+#portfolio div.wrap div.wbutton{
+  position:absolute;
+  left: -160px;
+  bottom: -60px;
+  z-index: 1;
+  display: flex;
+  gap: 40px;
+  width: fit-content;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio div.wrap div.wsub .slick-arrow{
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: static;
+  transform: translate(0);
+}
+#portfolio div.wrap div.wsub .slick-arrow::before{
+  font-size: 0;
+}
+#portfolio div.wrap div.wsub .slick-prev{
+  background-image: url(../img/arrow.L.svg);
+}
+#portfolio div.wrap div.wsub .slick-next{
+  background-image: url(../img/arrow.R.svg);
+  order: 3;
+}
+#portfolio div.wrap div.wimg .slick-arrow{
+  display: none !important;
+}
+#portfolio div.wrap span.number{
+  order: 2;
+  width: 50px;
+  padding: 10px;
+}
+/* process */
+#process {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+#process div.wrap {
+  width: auto;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  border: 5px solid #161616;
+  padding: 20px;
+  color: #333;
+  line-height: 1.5;
+  gap: 10px;
+}
+#process div.wrap h2 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  align-self: flex-start;
+}
+#process div.wrap p {
+  font-size: 19px;
+}
+#process div.wrap h3 {
+  font-weight: 600;
+  font-size: 17px;
+  opacity: 0.8;
+}
+#process div.wrap div.titleani{
+  height: fit-content;
+}
+#process div.wrap div.titleani ul.skill {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#process div.wrap div.titleani ul.skill li {
+  background-color: #ABBACC;
+  width: fit-content;
+  align-content: center;
+  display: block;
+  border-radius: 25px;
+  opacity: 0.8;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  margin-right: 10px;
+}
+#process div.wrap a {
+  display: inline-block;
+  background-color: #4c4a4a;
+  color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  align-self: flex-end;
+  align-content: center;
+  transition: 0.5s;
+  margin-right: 30px;
+}
+#process div.wrap a:hover{
+  /*! background-color: #999; */
+  color: #f1f1f1;
+}
+/* prpcess slick */
+#process .slick-track{
+  display: flex;
+  height: 190px;
+}
+#process .slick-list{
+  width: 1200px;
+  height: 180px;
+}
+#process .slick-initialized .slick-slide{
+  height: auto;
+  margin: 20px;
+  color: #333;
+}
+#process div.wrap .slick-dots li{
+  display: inline-block;
+  width: 30px;
+  background-color: transparent;
+}
+/* contact */
+#contact {
+  width: 100%;
+  height: auto;
+}
+#contact div.wrap {
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: auto 50px repeat(3,auto);
+  align-items: center;
+  gap: 35px;
+  padding: 50px 0 100px 0;
+  height: 100%;
+  position: relative;
+}
+#contact div.wrap h2 {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+#contact div.wrap p {
+  line-height: 1.5;
+  display: flex;
+}
+#contact div.wrap >p{
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  color: #555;
+  font-size: 19px;
+}
+#contact div.wrap p:nth-child(7){
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  justify-content: center;
+}
+#contact div.wrap h3 {
+  font-size: 35px;
+  height: 100%;
+}
+#contact div.wrap a{
+  grid-column: 3;
+  grid-row: 4;
+  align-content: center;
+  justify-self: flex-start;
+}
+#contact div.wrap >a{
+  width: 200px;
+  height: 57px;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.4s;
+  background-image: url(../img/bluebutton-B.svg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#contact div.wrap > a:hover{
+  color: #444;
+  background-image: url(../img/bluebutton-A.svg);
+}
+#contact div.wrap ul.list{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact div.wrap ul.list li{
+  
+}
+#contact div.wrap ul.sns {
+  grid-column: 2;
+  grid-row: 4;
+  gap: 50px;
+  width: fit-content;
+  border: 3px solid #8d8d8d;
+  border-radius: 40px;
+  padding: 15px;
+  justify-self: flex-end;
+}
+#contact div.wrap ul.sns li {
+  font-size: 0;
+}
+#contact div.wrap ul.sns li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: 1s;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+} 
+#contact div.wrap ul.sns li:nth-child(1)>a{
+  background-image: url(../img/kakao-talk.png);
+}
+#contact div.wrap ul.sns li:nth-child(1)>a:hover{
+  background-image: url(../img/kakao-talk2.png);
+}
+#contact div.wrap ul.sns li:nth-child(2)>a{
+  background-image: url(../img/instargram.png);
+}
+#contact div.wrap ul.sns li:nth-child(2)>a:hover{
+  background-image: url(../img/instargram2.png);
+}
+#contact div.wrap ul.sns li:nth-child(3)>a{
+  background-image: url(../img/gmail.png);
+}
+#contact div.wrap ul.sns li:nth-child(3)>a:hover{
+  background-image: url(../img/gmail2.png);
+}
+#contact div.wrap> div {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact div.wrap ul.src {
+  gap: 15px;
+}
+#contact div.wrap ul.src li{
+ 
+}
+#contact div.wrap ul.src li a {
+  width: 60px;
+  padding-right: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+#contact div.wrap ul.src li a:hover{
+  color: #888;
+}
+#contact div.wrap img{
+  width: 300px;
+  grid-column: 4;
+  grid-row: 1 / span 3;
+  align-self: flex-start;
+  justify-self: center;
+}
+#contact div.wrap div.sourcesite{
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  line-height: 1.5;
+}
+#contact div.wrap div.sourcesite p{
+  color: #555;
+  font-size:18px;
+}
+/* 하단영역 */
+footer {
+  overflow: hidden;
+}
+footer div.wrap {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+ background-color: #5874c7;
+  border-radius: 20px 20px 0 0;
+  color: #333;
+  row-gap: 15px;
+  height: 300px;
+  max-width: initial !important;
+  padding: 20px 35px;
+}
+footer div.wrap h1 {
+  width: fit-content;
+  font-size: 40px;
+}
+footer div.wrap h1 a {
+  font-size: 0;
+  width: 280px;
+  height: 50px;
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+footer div.wrap address {
+  
+}
+footer div.wrap address strong {
+  
+}
+footer div.wrap ul.img{
+  grid-column: 1;
+  grid-row: 3;
+  width: auto;
+  justify-self: right;
+  z-index: 1;
+}
+footer div.wrap ul.sns{
+  justify-self: right;
+  gap: 50px;
+}
+footer div.wrap ul.sns li {
+  
+}
+footer div.wrap ul.sns li a {
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* 하단 sns영역 */
+footer div.wrap ul.sns li:nth-child(1) a{
+  background-image: url(../img/notion3.svg);
+}
+footer div.wrap ul.sns li:nth-child(2) a{
+  background-image: url(../img/github2.svg);
+}
+footer div.wrap ul.sns li:nth-child(3) a{
+  background-image: url(../img/google.svg);
+}
+footer div.wrap ul.sns li:nth-child(4) a{
+  background-image: url(../img/codepen.svg);
+}
+footer div.wrap ul.sns li:nth-child(5) a{
+  background-image: url(../img/instargram.svg);
+}
+footer div.wrap ul.fnb {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  gap: 80px;
+}
+footer div.wrap ul.fnb li {
+  
+}
+footer div.wrap ul.fnb li a {
+  color: #333;
+  transition: 0.5s;
+}
+footer div.wrap ul.fnb li a:hover{
+  color: #898989;
+}
+footer div.wrap p {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+}
+footer div.wrap p strong {
+  
+}
